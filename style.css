@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.hero {
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(35, 82, 222, 0.5);
+    z-index: -1;
+    position: absolute;
+}
+
+.header {
+    color: white;
+    display: flex;
+    padding-top: 90px;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+}
+
+.listItem {
+    margin-right: 35px;
+}
+
+.listItem :last-child {
+    margin-right: 0;
+}
+
+.hero_inner {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-top: 320px;
+}
+
+.name {
+
+}
